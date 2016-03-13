@@ -82,7 +82,8 @@ header {
     }
     .contact2 {
         width: 220px;
-        @include print {
+        background: #F6F6F6;
+        @include printer {
             background: #FAFAFA;
             border-radius: 5px;
         }

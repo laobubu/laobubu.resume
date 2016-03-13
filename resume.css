@@ -61,9 +61,12 @@ header .contact {
 
 header .contact2 {
   width: 220px;
-  background: #FAFAFA;
-  border-radius: 5px;
+  background: #F6F6F6;
   padding: 10px 20px; }
+  @media print {
+    header .contact2 {
+      background: #FAFAFA;
+      border-radius: 5px; } }
   header .contact2 a {
     color: inherit;
     text-decoration: none; }
