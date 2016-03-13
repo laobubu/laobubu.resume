@@ -16,10 +16,10 @@ body {
   margin: 0 auto; }
 
 /* Header */
-header .wrapper {
-  display: table;
-  border-spacing: 20px;
-  width: 100%; }
+header .wrapper:after {
+  content: ' ';
+  display: block;
+  clear: both; }
 
 header h1,
 header p {
@@ -42,27 +42,27 @@ header p {
     padding: 2px 5px;
     margin: 5px 0; }
 
-header .photo,
-header .contact,
-header .contact2 {
-  display: table-cell;
-  vertical-align: top; }
-
 header .photo {
-  width: 140px; }
+  margin: 20px;
+  width: 140px;
+  float: left; }
   header .photo img {
     border-radius: 50%;
     width: 140px; }
 
 header .contact {
-  padding-top: 50px; }
+  margin: 20px;
+  padding-top: 50px;
+  float: left; }
   header .contact p {
     color: #999; }
 
 header .contact2 {
+  margin: 20px;
+  padding: 10px 20px;
   width: 220px;
-  background: #F6F6F6;
-  padding: 10px 20px; }
+  float: right;
+  background: #F6F6F6; }
   @media print {
     header .contact2 {
       background: #FAFAFA;
