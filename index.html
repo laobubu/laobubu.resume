@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="photo">
+                <img src="photo.jpg" alt="">
+            </div>
+            <div class="contact">
+                <h1>Lyu Lyon</h1>
+                <p>Indie Web Developer</p>
+            </div>
+            <div class="contact2">
+                <p>邮箱:
+                    <a href="mailto:laobubu@gmail.com">laobubu@gmail.com</a>
+                </p>
+                <p>网站:
+                    <a href="http://laobubu.net">http://laobubu.net</a>
+                </p>
+                <p>微博:
+                    <a href="http://weibo.com/laobubu">@laobubu</a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <article class="wrapper">
+        <section>
+            <h2 class="teal">技能列表</h2>
+            <table class="skills">
+                <tr>
+                    <th>JavaScript</th>
+                    <td><div class="progress" data-value="89"></div></td>
+                    <th>HTML</th>
+                    <td><div class="progress" data-value="78"></div></td>
+                </tr>
+                <tr>
+                    <th>Photoshop</th>
+                    <td><div class="progress" data-value="74"></div></td>
+                    <th>CSS/SCSS</th>
+                    <td><div class="progress" data-value="80"></div></td>
+                </tr>
+                <tr>
+                    <th>Python</th>
+                    <td><div class="progress" data-value="70"></div></td>
+                    <th>C</th>
+                    <td><div class="progress" data-value="74"></div></td>
+                </tr>
+                <tr>
+                    <th>Linux</th>
+                    <td><div class="progress" data-value="67"></div></td>
+                    <th>Git</th>
+                    <td><div class="progress" data-value="72"></div></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2 class="red">个人作品</h2>
+            <div class="showcase">
+                <div class="item">
+                    <img src="showcase/markdownime.jpg" alt=""><div class="detail">
+                        <h3>MarkdownIME</h3>
+                        <p>开创性地统一了 Markdown 编辑器的输入和预览工作。采用 TypeScript 开发，功能使用原生 JavaScript 和 DOM API 实现。包含一个基于词法分析的高速 Markdown 渲染器。</p>
+                        <p>
+                            <a href="http://laobubu.net/MarkdownIME/" class="btn">Demo</a>
+                            <a href="https://github.com/laobubu/MarkdownIME" class="btn">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="showcase/easybook.jpg" alt=""><div class="detail">
+                        <h3>EasyBook</h3>
+                        <p>简洁的 Jekyll 博客主题。包含丰富的配置以及自动生成 TOC 等功能，原采用 jQuery 实现，后修改为完全原生 JavaScript 实现。</p>
+                        <p>
+                            <a href="http://blog.laobubu.net" class="btn">Demo</a>
+                            <a href="https://github.com/laobubu/jekyll-theme-EasyBook" class="btn">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="showcase/smartheader.jpg" alt=""><div class="detail">
+                        <h3>Smart Header</h3>
+                        <p>智能易用的 Chrome 请求头修改扩展程序，可用于各种开发测试等。前身为知名的 Change HTTP Request Header。</p>
+                        <p><a class="btn" href="https://bit.ly/1RGXExz">Chrome Store</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <script src="resume.js"></script>
+</body>
+
+</html>
