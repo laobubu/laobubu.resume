@@ -36,39 +36,105 @@
     <article class="wrapper">
         <section>
             <h2 class="teal">技能列表</h2>
-            <table class="skills">
-                <tr>
-                    <th>JavaScript</th>
-                    <td><div class="progress" data-value="89"></div></td>
-                    <th>HTML</th>
-                    <td><div class="progress" data-value="78"></div></td>
-                </tr>
-                <tr>
-                    <th>Photoshop</th>
-                    <td><div class="progress" data-value="74"></div></td>
-                    <th>CSS/SCSS</th>
-                    <td><div class="progress" data-value="80"></div></td>
-                </tr>
-                <tr>
-                    <th>Python</th>
-                    <td><div class="progress" data-value="70"></div></td>
-                    <th>C</th>
-                    <td><div class="progress" data-value="74"></div></td>
-                </tr>
-                <tr>
-                    <th>Linux</th>
-                    <td><div class="progress" data-value="67"></div></td>
-                    <th>Git</th>
-                    <td><div class="progress" data-value="72"></div></td>
-                </tr>
-            </table>
+            <div class="skills">
+                <div class="item">
+                    <h3>JavaScript</h3>
+                    <div class="detail">
+                        <div class="progress" data-value="89"></div>
+                        <ul>
+                            <li>完全原生 JavaScript 开发</li>
+                            <li>jQuery</li>
+                            <li>Node.js 服务端应用</li>
+                            <li>常见浏览器及移动端</li>
+                            <li>常用的 DOM BOM API 等</li>
+                            <li>ECMAScript 6</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>HTML</h3>
+                    <div class="detail">
+                        <div class="progress" data-value="78"></div>
+                        <ul>
+                            <li>脱离 WYSIWYG 编写网页</li>
+                            <li>编写符合 W3C 的页面</li>
+                            <li>语义化标签</li>
+                            <li>HTML5</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>CSS/SCSS</h3>
+                    <div class="detail">
+                        <div class="progress" data-value="80"></div>
+                        <ul>
+                            <li>模块化分离</li>
+                            <li>响应式</li>
+                            <li>CSS 3</li>
+                            <li>CSS Hack</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Photoshop</h3>
+                    <div class="detail">
+                        <div class="progress" data-value="74"></div>
+                        <ul>
+                            <li>图像美化与设计</li>
+                            <li>矢量图像制作（Illustrator）</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Python</h3>
+                    <div class="detail">
+                        <div class="progress" data-value="70"></div>
+                        <ul>
+                            <li>基础 Python 编程能力</li>
+                            <li>基于 Bottle 等编写网站后端</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>C</h3>
+                    <div class="detail">
+                        <div class="progress" data-value="74"></div>
+                        <ul>
+                            <li>基本 C 语言能力</li>
+                            <li>嵌入式开发</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Linux</h3>
+                    <div class="detail">
+                        <div class="progress" data-value="67"></div>
+                        <ul>
+                            <li>常用的 Linux 指令</li>
+                            <li>编写 Bash Script 脚本文件</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Git</h3>
+                    <div class="detail">
+                        <div class="progress" data-value="72"></div>
+                        <ul>
+                            <li>使用 Git 管理代码版本</li>
+                            <li>良好的 commit 习惯</li>
+                            <li>在 GitHub 上管理 Repositories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>
             <h2 class="red">个人作品</h2>
             <div class="showcase">
                 <div class="item">
-                    <img src="showcase/markdownime.jpg" alt=""><div class="detail">
+                    <img src="showcase/markdownime.jpg" alt="">
+                    <div class="detail">
                         <h3>MarkdownIME</h3>
                         <p>开创性地统一了 Markdown 编辑器的输入和预览工作。采用 TypeScript 开发，功能使用原生 JavaScript 和 DOM API 实现。包含一个基于词法分析的高速 Markdown 渲染器。</p>
                         <p>
@@ -78,7 +144,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="showcase/easybook.jpg" alt=""><div class="detail">
+                    <img src="showcase/easybook.jpg" alt="">
+                    <div class="detail">
                         <h3>EasyBook</h3>
                         <p>简洁的 Jekyll 博客主题。包含丰富的配置以及自动生成 TOC 等功能，原采用 jQuery 实现，后修改为完全原生 JavaScript 实现。</p>
                         <p>
@@ -88,7 +155,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="showcase/smartheader.jpg" alt=""><div class="detail">
+                    <img src="showcase/smartheader.jpg" alt="">
+                    <div class="detail">
                         <h3>Smart Header</h3>
                         <p>智能易用的 Chrome 请求头修改扩展程序，可用于各种开发测试等。前身为知名的 Change HTTP Request Header。</p>
                         <p><a class="btn" href="https://bit.ly/1RGXExz">Chrome Store</a></p>

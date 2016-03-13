@@ -5,6 +5,11 @@ body {
   line-height: 1.2;
   background-color: #eee;
   color: #333; }
+  @media print {
+    body {
+      color: #000;
+      background: #fff;
+      -webkit-print-color-adjust: exact; } }
 
 .wrapper {
   max-width: 800px;
@@ -55,8 +60,8 @@ header .contact {
     color: #999; }
 
 header .contact2 {
-  width: 250px;
-  background: #F0F0F0;
+  width: 220px;
+  background: #FAFAFA;
   border-radius: 5px;
   padding: 10px 20px; }
   header .contact2 a {
@@ -144,16 +149,46 @@ article section {
     width: 0%;
     height: 100%; }
 
+.item {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid; }
+
 .skills {
   width: 100%;
-  border-spacing: 10px; }
-  .skills th {
-    width: 90px;
-    text-align: right;
-    font-weight: normal; }
+  border-spacing: 10px;
+  font-size: 0.87em;
+  column-count: 2;
+  -moz-column-count: 2;
+  -webkit-column-count: 2; }
+  .skills .item {
+    box-sizing: border-box;
+    padding: 0px;
+    margin-bottom: 10px; }
+  .skills .progress {
+    height: 2px;
+    margin-bottom: 5px; }
+  .skills h3 {
+    font-weight: normal;
+    margin: 5px 0; }
+  .skills .detail ul {
+    color: #666;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.5; }
+    .skills .detail ul li:before {
+      display: inline-block;
+      text-align: center;
+      width: 2em;
+      height: 100%;
+      vertical-align: middle;
+      content: "\2714";
+      font-size: .87em; }
 
 .showcase .item {
-  margin-bottom: 20px; }
+  padding: 10px 0; }
   .showcase .item .detail {
     float: right;
     width: 70%;
