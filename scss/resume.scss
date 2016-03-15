@@ -35,7 +35,8 @@ body {
 
 header {
     .wrapper {
-        @include clear-fix;
+        display: flex;
+        align-items: center;
     }
     h1,
     p {
@@ -62,7 +63,6 @@ header {
     .photo {
         margin: $box-padding;
         width: 140px;
-        float: left;
         img {
             border-radius: 50%;
             width: 140px;
@@ -70,17 +70,16 @@ header {
     }
     .contact {
         margin: $box-padding;
-        padding-top: 50px;
-        float: left;
+        flex-grow: 1;
+        position: relative;
         p {
+            position: absolute;
             color: #999;
         }
     }
     .contact2 {
         margin: $box-padding;
         padding: 10px 20px;
-        width: 220px;
-        float: right;
         background: #F6F6F6;
         @include printer {
             background: #FAFAFA;

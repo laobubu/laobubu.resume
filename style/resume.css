@@ -16,10 +16,9 @@ body {
   margin: 0 auto; }
 
 /* Header */
-header .wrapper:after {
-  content: ' ';
-  display: block;
-  clear: both; }
+header .wrapper {
+  display: flex;
+  align-items: center; }
 
 header h1,
 header p {
@@ -44,24 +43,22 @@ header p {
 
 header .photo {
   margin: 20px;
-  width: 140px;
-  float: left; }
+  width: 140px; }
   header .photo img {
     border-radius: 50%;
     width: 140px; }
 
 header .contact {
   margin: 20px;
-  padding-top: 50px;
-  float: left; }
+  flex-grow: 1;
+  position: relative; }
   header .contact p {
+    position: absolute;
     color: #999; }
 
 header .contact2 {
   margin: 20px;
   padding: 10px 20px;
-  width: 220px;
-  float: right;
   background: #F6F6F6; }
   @media print {
     header .contact2 {
