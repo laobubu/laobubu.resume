@@ -90,6 +90,22 @@ header {
             text-decoration: none;
         }
     }
+    @media (max-width: 600px) {
+        .wrapper {
+            display: block;
+            text-align: center;
+        }
+        .photo,
+        .contact,
+        .contact2 {
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+        }
+        .contact p {
+            position: static;
+        }
+    }
 }
 
 /*
