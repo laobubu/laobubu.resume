@@ -255,7 +255,60 @@ article section {
         }
     }
 }
+
+.showcase_toggle {
+    background-color: #FAFAFA;
+    z-index: 100;
+    padding: 5px 0;
+    position: fixed;
+    transition: opacity .3s;
+
+    .item {
+        text-decoration: none;
+        display: inline-block;
+        margin: 2px;
+        cursor: pointer;
+        input { display:none; }
+        span {
+            display: block;
+            padding: 10px;
+            padding: 8px 12px;
+            color: #999;
+            background-color: #eee;
+            transition: .2s ease;
+        }
+        input:checked + span,
+        &.active input + span { 
+            color: #333;
+            background-color: #FFF;
+        }
+        &::-moz-focus-inner,
+        &:focus {
+            border:0;
+            outline: 0;
+        }
+        &:hover span, 
+        &:focus span
+        {
+            background-color: #FAFAFA;
+            color: #333;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px #999 !important;
+            outline: none;
+        }
+    }
+}
+
 .showcase {
+    overflow: hidden;
+    &:after {
+        content: '::: :::';
+        color: #ddd;
+        width: 30%;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
     .item {
         .detail {
             float: right;
